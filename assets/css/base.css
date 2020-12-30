@@ -1,0 +1,245 @@
+
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #52afaf;
+    --border-color: #dbdbdb;
+    --bg-btn: #e4dcdc;
+    --red-color: rgb(234, 66, 66);
+
+    --header-height: 130px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --font-size-default: 1.5rem;
+    --font-size-header: 1.8rem;
+
+    --border-radius-default: 5px;
+
+    /* Text */
+    --background-header: linear-gradient(0,#3aaaaa,#7d9df5);
+    --background-footer: linear-gradient(0,#59bebe,#678bee);
+    --background: #c0c0c0;
+    --backgroundShadow: -6px 6px 15px rgba(0,0,0,0.5);
+    --textshadow: 6px -6px 15px rgba(255,255,255,0.8);
+}
+
+*{
+    box-sizing: inherit;
+}
+.bg-cl{
+    background-color: #F5F5F5;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* Reponsive */
+/* Layout css */
+.grid {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.grid__column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid__column-2-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+}
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+.grid__column-6 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 50%;
+}
+.grid__column-8{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 75%;
+}
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fadeIn linear 0.1s;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    width: 500px;
+    margin: 50px auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+    
+}
+
+/* CSS btn style */
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    transition-delay: 3000;
+    transition-duration: 1s;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    background-color: #999;
+}
+.btn-active{
+    background-color: var(--text-color);
+    transition-delay: 3000;
+    transition-duration: 1s;
+    color: var(--white-color);
+}
+
+/* animation of slideshow */
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+/* -------- */
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.img-homepage{
+    background: url("https://www.thegioididong.com/Content/noel2020/bg-top-min.png") no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    min-width: 1200px;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+}
+/* */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
