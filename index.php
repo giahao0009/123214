@@ -135,7 +135,9 @@
                         <div class="hearder__cart-wrap">
                             <a href="./cart.php"><i class="header__cart-icon fas fa-shopping-cart"></i></a>
                             <div class="header__cart-list header__cart-list--no-cart">
-                                <img src="./assets/img/empty_cart.jpg" alt="" class="header__cart-no-cart-img">
+                                
+                                        <img src="./assets/img/empty_cart.jpg" alt="" class="header__cart-no-cart-img">
+                                
                             </div>
                         </div>
                     </div>
@@ -354,7 +356,7 @@
                             <div class="gird">
                                 <div class="grid__row">
                                     <div class="grid__column-2-4">
-                                        <a href="" class="home-product-link">
+                                        <a href="./detail.php?id=59" class="home-product-link">
                                             <div class="home-product-item">
                                                 <img src="./assets/img/giay-1.jpg" width="100%"
                                                     class="home-product-item__img">
@@ -385,7 +387,7 @@
                                         </a>
                                     </div>
                                     <div class="grid__column-2-4">
-                                        <a href="" class="home-product-link">
+                                        <a href="./detail.php?id=30" class="home-product-link">
                                             <div class="home-product-item">
                                                 <img src="./assets/img/san-pham-ao-khoac-02.webp" width="100%"
                                                     class="home-product-item__img">
@@ -416,7 +418,7 @@
                                         </a>
                                     </div>
                                     <div class="grid__column-2-4">
-                                        <a href="" class="home-product-link">
+                                        <a href="./detail.php?id=2" class="home-product-link">
                                             <div class="home-product-item">
                                                 <img src="./assets/img/san-pham-8.webp" width="100%"
                                                     class="home-product-item__img">
@@ -447,7 +449,7 @@
                                         </a>
                                     </div>
                                     <div class="grid__column-2-4">
-                                        <a href="" class="home-product-link">
+                                        <a href="./detail.php?id=52" class="home-product-link">
                                             <div class="home-product-item">
                                                 <img src="./assets/img/san-pham-10.webp" width="100%"
                                                     class="home-product-item__img">
@@ -1015,7 +1017,7 @@
                                         <div class="grid__column-2-4">
                                             <a href="" class="home-product-link">
                                                 <div class="home-product-item">
-                                                    <img src="./assets/img/san-pham-23webp.webp" width="100%"
+                                                    <img src="./assets/img/san-pham-23.webp" width="100%"
                                                         class="home-product-item__img">
                                                     <hr>
                                                     <h4 class="home-product-item__name">Velvet Pants</h4>
